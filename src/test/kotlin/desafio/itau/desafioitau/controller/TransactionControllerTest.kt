@@ -1,8 +1,6 @@
 package desafio.itau.desafioitau.controller
 
-import desafio.itau.desafioitau.dto.TransactionRequestDTO
 import desafio.itau.desafioitau.exception.InvalidTransactionDateException
-import desafio.itau.desafioitau.exception.InvalidTransactionValueException
 import desafio.itau.desafioitau.service.impl.TransactionServiceImpl
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
