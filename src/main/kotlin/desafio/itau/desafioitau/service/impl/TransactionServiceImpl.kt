@@ -30,6 +30,10 @@ class TransactionServiceImpl(transactionList: List<Transaction>) : TransactionSe
         transactionList.add(Transaction(transaction.valor, localDateTimeTransaction))
     }
 
+    override fun cleanAllTransactions() {
+        transactionList = transactionList.toMutableList()
+    }
+
     override fun getStatisticsOfTransaction(): StatisticsResponseDTO {
         TODO("Not yet implemented")
     }

@@ -6,7 +6,6 @@ import java.time.OffsetDateTime
 
 data class TransactionRequestDTO(
     @field:NotNull
-    @field:Min(0)
     var valor: Double,
 
     @field:NotNull

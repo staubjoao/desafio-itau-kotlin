@@ -7,10 +7,7 @@ import desafio.itau.desafioitau.service.impl.TransactionServiceImpl
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/transacao")
@@ -28,6 +25,12 @@ class TransactionController(private val transactionService: TransactionServiceIm
         } catch (e: Exception) {
             ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null)
         }
+    }
+
+    @DeleteMapping
+    fun cleanAllTransactions(): ResponseEntity<Unit> {
+        transactionService.cleanAllTransactions()
+        return ResponseEntity.status(HttpStatus.OK).body(null)
     }
 
 }
