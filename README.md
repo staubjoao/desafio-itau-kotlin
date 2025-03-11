@@ -1,6 +1,6 @@
 # API de Transações e Estatísticas
 
-Esta é uma API REST desenvolvida em Kotlin com Spring Boot para receber transações e calcular estatísticas sobre essas transações nos últimos 60 segundos. O projeto foi desenvolvido como parte de um desafio técnico.
+Esta é uma API REST desenvolvida em Kotlin com Spring Boot para receber transações e calcular estatísticas sobre essas transações nos últimos 60 segundos. O projeto foi desenvolvido como parte de um desafio técnico disponível no link https://github.com/feltex/desafio-itau-backend.
 
 ---
 
@@ -47,7 +47,7 @@ Esta é uma API REST desenvolvida em Kotlin com Spring Boot para receber transa�
 ## Como Executar o Projeto
 
 ### Pré-requisitos
-- Java 17 ou superior
+- Java 21 ou superior
 - Kotlin 1.8 ou superior
 - Maven ou Gradle (dependendo da configuração do projeto)
 
@@ -55,8 +55,8 @@ Esta é uma API REST desenvolvida em Kotlin com Spring Boot para receber transa�
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/staubjoao/desafio-itau-kotlin.git
+   cd desafio-itau-kotlin
    ```
    
 2. Compile o projeto:
